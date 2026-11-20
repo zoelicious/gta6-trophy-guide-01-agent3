@@ -1,49 +1,56 @@
-import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
-import { join, resolve } from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+// LEONIDA GETAWAY — gta6-trophy-guide-01 entry (Node 22, standard library only).
+// The guide is this directory's app/ folder: plain static files a browser opens at
+// app/index.html (ES module, CSS, no build step), offline: it loads nothing over the
+// network, and its trophy list and guides are app/data/trophies.json. This program
+// hands it in: it copies app/ and screenshots/ from beside this file to /output and
+// writes /output/dossier.json, the summary the judge reads, with the vendored
+// make.fun library. Leave vendor/makefun-frontend.ts as it is: the scorer requires
+// dossier.json to be byte for byte what its own copy writes.
+//
+// The output directory itself is never removed: in the grader /output is a mount
+// point whose parent is read-only, so deleting it fails with EACCES. Instead the
+// program creates it if needed and empties only its contents, entry by entry.
+//
+// Serve it locally with `node serve.ts`, then open http://localhost:8080.
+// Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
+//   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
-// Absolute directory of this file, whatever the caller's working directory is.
-// Every filesystem path below is built from BOT_DIR — never from process.cwd().
+import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { buildDossier } from './vendor/makefun-frontend.ts';
+
 const BOT_DIR = fileURLToPath(new URL('.', import.meta.url));
-const APP_DIR = join(BOT_DIR, 'app');
-const SHOTS_DIR = join(BOT_DIR, 'screenshots');
-const VENDOR_FILE = join(BOT_DIR, 'vendor', 'makefun-frontend.ts');
+const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// Output: $MAKEFUN_OUTPUT_DIR when set (resolved against BOT_DIR when relative),
-// otherwise an "out" directory next to this file. Never the caller's cwd.
-const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR
-  ? resolve(BOT_DIR, process.env.MAKEFUN_OUTPUT_DIR)
-  : join(BOT_DIR, 'out');
-
-// Safety: never wipe the filesystem root or the repository itself.
-if (OUT_DIR === '/' || OUT_DIR === BOT_DIR) {
-  throw new Error('Refusing unsafe MAKEFUN_OUTPUT_DIR: ' + OUT_DIR);
+// Empty a directory's contents without removing the directory itself. The grader
+// runs with /output as a mount point whose parent is read-only, so rmSync on the
+// directory itself fails with EACCES; removing each entry inside it never touches
+// the parent. Nothing in this program ever calls rmSync on OUT_DIR.
+function emptyDirContents(dir) {
+  for (const entry of readdirSync(dir)) {
+    rmSync(join(dir, entry), { recursive: true, force: true });
+  }
 }
 
-// Fail fast with a clear message when the entry is incomplete.
-if (!existsSync(APP_DIR)) throw new Error('Missing app directory: ' + APP_DIR);
-if (!existsSync(SHOTS_DIR)) throw new Error('Missing screenshots directory: ' + SHOTS_DIR);
-
-// Rebuild the output directory from scratch so stale files never survive.
-rmSync(OUT_DIR, { recursive: true, force: true });
+// Create the output directory if it is missing, then empty only its contents.
 mkdirSync(OUT_DIR, { recursive: true });
+emptyDirContents(OUT_DIR);
 
-// Copy the entry (app + screenshots) into the output directory.
-cpSync(APP_DIR, join(OUT_DIR, 'app'), { recursive: true });
-cpSync(SHOTS_DIR, join(OUT_DIR, 'screenshots'), { recursive: true });
+cpSync(join(BOT_DIR, 'app'), join(OUT_DIR, 'app'), { recursive: true });
+mkdirSync(join(OUT_DIR, 'screenshots'), { recursive: true });
+if (existsSync(join(BOT_DIR, 'screenshots'))) {
+  cpSync(join(BOT_DIR, 'screenshots'), join(OUT_DIR, 'screenshots'), { recursive: true });
+}
 
-// Load the dossier builder from the vendored kit file by absolute file URL.
-const { buildDossier } = await import(pathToFileURL(VENDOR_FILE).href);
+// The scorer's own caps (reference/gate.json): only text_max_bytes shapes the bytes; the others refuse an entry the
+// scorer would refuse (more than 4 screenshots or one over 256 KiB; more than 993 files and directories in app/ or
+// 48 MiB of app files: app/ counts beside /output's own 1000-entry cap, its screenshots/ and dossier.json).
+writeFileSync(
+  join(OUT_DIR, 'dossier.json'),
+  buildDossier(OUT_DIR, { text_max_bytes: 163840, screenshots: { max: 4, max_bytes: 262144 }, app_max_files: 993, app_max_bytes: 50331648 }),
+);
 
-// Write the dossier exactly as the scorer's copy of buildDossier computes it.
-const dossier = buildDossier(OUT_DIR, {
-  text_max_bytes: 163840,
-  screenshots: { max: 4, max_bytes: 262144 },
-  app_max_files: 993,
-  app_max_bytes: 50331648,
-  app_path_max_bytes: 1000,
-});
-writeFileSync(join(OUT_DIR, 'dossier.json'), dossier);
-
-console.log('Built entry in ' + OUT_DIR);
-console.log('dossier.json: ' + dossier.length + ' bytes');
+const dossierBytes = statSync(join(OUT_DIR, 'dossier.json')).size;
+console.log(`Built entry in ${OUT_DIR}`);
+console.log(`dossier.json: ${dossierBytes} bytes`);

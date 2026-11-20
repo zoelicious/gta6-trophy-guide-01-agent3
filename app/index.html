@@ -1,28 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LEONIDA GETAWAY — GTA VI · PS5 Trophy Guide</title>
+<title>LEONIDA GETAWAY — GTA VI · PS5 trophy guide</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar">
+<header class="top">
   <div class="brand">
-    <div class="brand-mark">LG</div>
+    <div class="mark">LG</div>
     <div>
       <h1>LEONIDA GETAWAY</h1>
-      <p>GTA VI &middot; PS5 trophy guide &mdash; the platinum run as one long getaway across Leonida</p>
+      <p class="sub">GTA VI · PS5 trophy guide — the platinum run as one long getaway across Leonida</p>
     </div>
   </div>
-  <div class="header-stats">
-    <div class="big-progress"><span id="hdrProgress">0/55</span><span id="hdrPct">&middot; 0%</span></div>
-    <div class="grade-chips" id="hdrGrades"></div>
-    <button id="spoilerToggle" class="btn ghost" type="button">Spoilers hidden &middot; 28</button>
-    <span id="savedNote" class="saved-note">No saved progress yet</span>
+  <div class="headstats">
+    <div class="big" id="head-progress">0/55 · 0%</div>
+    <div class="chips" id="head-grades"></div>
+    <button class="spoiler" id="spoiler-toggle" type="button">Spoilers hidden · 28</button>
+    <div class="saved" id="saved-note">✓ Saved in this browser · --:--</div>
   </div>
 </header>
-<div class="audit" id="auditStrip">Loading audit&hellip;</div>
+<div class="audit" id="audit-strip">Loading the official list…</div>
 <nav class="tabs" id="tabs">
   <button data-tab="map" class="active" type="button">Map</button>
   <button data-tab="checklist" type="button">Checklist</button>
@@ -31,102 +31,68 @@
   <button data-tab="progress" type="button">Progress &amp; export</button>
   <button data-tab="sources" type="button">Sources</button>
 </nav>
-
 <main>
   <section id="tab-map" class="tabpage active">
-    <div class="map-grid">
-      <div class="map-card">
-        <div class="map-head">
-          <h2>The getaway route</h2>
-          <p>Every pin is a trophy with a place. Click a pin — or a waypoint — to open its detail.</p>
+    <div class="mapwrap">
+      <div class="mapcol">
+        <h2>The getaway route</h2>
+        <p class="lede">Every pin is a trophy with a place. Click a pin — or a waypoint — to open its detail.</p>
+        <div class="mapbox" id="mapbox"></div>
+        <div class="maplegend">
+          <span><i class="sw route"></i> Getaway route — 8 stops, Vice City to platinum</span>
+          <span><i class="sw pin"></i> Trophy pin — click to open</span>
+          <span><i class="sw miss"></i> Possibly missable</span>
         </div>
-        <svg id="leonidaMap" viewBox="0 0 1000 620" role="img" aria-label="Stylised map of Leonida with trophy pins and the platinum getaway route">
-          <rect x="0" y="0" width="1000" height="620" fill="#0a1220"></rect>
-          <path d="M120 210 C 140 120 260 60 380 80 C 480 95 520 60 640 70 C 780 85 900 140 920 230 C 935 300 880 340 860 400 C 840 470 760 540 640 560 C 520 578 420 540 340 500 C 240 455 120 420 105 330 C 95 280 105 250 120 210 Z" fill="#143d3a" stroke="#2b7f78" stroke-width="2"></path>
-          <path d="M180 470 C 220 500 300 520 360 505 C 330 530 240 540 200 515 C 175 500 165 480 180 470 Z" fill="#143d3a" stroke="#2b7f78" stroke-width="2"></path>
-          <path d="M700 560 C 740 585 800 590 830 575 C 800 600 720 600 690 580 Z" fill="#143d3a" stroke="#2b7f78" stroke-width="2"></path>
-          <g stroke="#c9a227" stroke-width="3" fill="none" stroke-dasharray="10 7" opacity="0.9">
-            <path d="M780 300 C 700 260 640 210 560 190 C 480 170 420 180 360 150 C 300 125 260 150 220 210 C 190 260 210 320 280 350 C 360 385 480 380 560 430 C 620 468 680 520 720 540"></path>
-          </g>
-          <g font-family="inherit" font-size="15" fill="#e8ddc0" font-weight="700" letter-spacing="1">
-            <text x="640" y="240">VICE CITY</text>
-            <text x="690" y="585">LEONIDA KEYS</text>
-            <text x="130" y="300">PORT GELLHORN</text>
-            <text x="270" y="120">MOUNT KALAGA</text>
-            <text x="420" y="472">GRASSRIVERS</text>
-            <text x="470" y="150">AMBROSIA</text>
-            <text x="370" y="300">HAMLET</text>
-            <text x="620" y="140">YORKTOWN</text>
-          </g>
-          <g id="waypoints"></g>
-          <g id="pins"></g>
-        </svg>
-        <div class="map-legend">
-          <span><i class="dot gold"></i> Getaway route &mdash; 8 stops, Vice City to platinum</span>
-          <span><i class="dot pin"></i> Trophy pin &mdash; click to open</span>
-          <span><i class="dot red"></i> Possibly missable</span>
-        </div>
-        <div class="region-list" id="regionList"></div>
+        <div class="regions" id="region-cards"></div>
       </div>
-      <aside class="detail-col">
-        <div id="detailPanel" class="detail-panel"></div>
-        <div class="rail" id="sourceRail"></div>
-      </aside>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
     </div>
   </section>
-
   <section id="tab-checklist" class="tabpage">
-    <div class="toolbar">
-      <input id="searchBox" type="search" placeholder="Search a trophy name&hellip;" aria-label="Search trophies">
-      <select id="kindFilter" aria-label="Filter by kind"></select>
-      <select id="gradeFilter" aria-label="Filter by grade"></select>
-      <select id="catFilter" aria-label="Filter by category"></select>
-      <select id="orderSelect" aria-label="Order">
-        <option value="roadmap">Order: Roadmap</option>
-        <option value="region">Order: Region</option>
-        <option value="category">Order: Category</option>
-      </select>
-      <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
-      <label class="check"><input id="notYet" type="checkbox"> Not yet earned</label>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search a trophy name…" aria-label="Search a trophy name">
+      <label>Kind <select id="f-kind"><option value="all">all</option><option value="meta">Meta</option><option value="chapter">Chapter</option><option value="mission">Mission</option><option value="counter">Counter</option><option value="moment">Moment</option></select></label>
+      <label>Grade <select id="f-grade"><option value="all">all</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+      <label>Category <select id="f-cat"><option value="all">all</option></select></label>
+      <label>Order <select id="f-order"><option value="roadmap">Roadmap</option><option value="region">Region</option><option value="category">Category</option></select></label>
+      <label class="chk"><input id="f-earned" type="checkbox"> Earned only</label>
+      <label class="chk"><input id="f-notyet" type="checkbox"> Not yet earned</label>
     </div>
-    <div id="checklistGroups"></div>
+    <div id="checklist"></div>
   </section>
-
   <section id="tab-roadmap" class="tabpage">
-    <div class="meta-chips" id="roadmapMeta"></div>
-    <div class="phase-grid" id="phaseGrid"></div>
+    <div class="metachips" id="meta-chips"></div>
+    <div class="stages" id="stage-cards"></div>
   </section>
-
   <section id="tab-missables" class="tabpage">
-    <div class="warn-row" id="warnRow"></div>
-    <div class="miss-grid" id="missGrid"></div>
-    <h3 class="subhead">Hidden trophies by chapter</h3>
-    <div id="hiddenBars"></div>
+    <div class="warnrow">
+      <div class="warnbox"><h3>NO MISSION REPLAY / NO NEW GAME+</h3><p>Once a story beat passes, it is gone. That is why the Chapter 1 meditation spot and the Chapter 3 stranger race are on this page — and why this guide tells you to save manually at the start of every chapter. <span class="cite">[1][5]</span></p></div>
+      <div class="warnbox"><h3>CHEATS DISABLE TROPHIES</h3><p>Cheats disable trophies and saving on the save they are used on. Never touch a cheat on the trophy save, even after the credits. <span class="cite">[1]</span></p></div>
+    </div>
+    <div class="ponr" id="ponr-cards"></div>
+    <h2 class="sect">Hidden trophies by chapter</h2>
+    <div id="hidden-bars"></div>
   </section>
-
   <section id="tab-progress" class="tabpage">
-    <div class="prog-grid">
-      <div class="card" id="psnCard"></div>
-      <div class="card" id="gradeCard"></div>
-      <div class="card" id="kindCard"></div>
-      <div class="card" id="stageCard"></div>
-      <div class="card" id="backupCard"></div>
+    <div class="proggrid">
+      <div class="card"><h3>PSN POINTS TOWARD PLATINUM</h3><div class="bigpts" id="psn-points">0 / 1,230 pts · 0%</div><p class="fine">Bronze 15 · Silver 30 · Gold 90 · Platinum 180. Total 1,230 = 46×15 + 6×30 + 2×90 + 180. An earlier draft of this guide used 1,350 — that was wrong; 1,230 is the correct total from the official grades.</p></div>
+      <div class="card"><h3>EARNED BY GRADE</h3><div id="by-grade"></div></div>
+      <div class="card"><h3>EARNED BY KIND</h3><div id="by-kind"></div></div>
+      <div class="card"><h3>ROADMAP STOPS</h3><div class="ministages" id="mini-stages"></div></div>
+      <div class="card"><h3>BACKUP</h3><div id="backup-meta">No export yet in this browser.</div><div class="btnrow"><button id="btn-export" type="button">Export progress</button><label class="importbtn">Import progress <input id="file-import" type="file" accept="application/json"></label><button id="btn-reset" type="button">Reset</button></div></div>
     </div>
   </section>
-
   <section id="tab-sources" class="tabpage">
-    <p class="intro">Every guide cites its sources by number. The matrix below shows what each source is and how many of the 55 guides cite it. Sources were read 19&ndash;20 Nov 2026.</p>
-    <table class="matrix" id="sourceMatrix">
-      <thead><tr><th>Source</th><th>Read</th><th>Guides</th><th>What it is</th></tr></thead>
+    <h2>Sources &amp; honesty</h2>
+    <p class="lede">Every guide in this app is written in our own words and cites a source. We never copy guide text from PowerPyx, PlayStationTrophies.org, PSNProfiles, TrueTrophies or Exophase — only the official trophy names, descriptions and grades are quoted verbatim, as the competition allows. URLs were read on the dates shown.</p>
+    <table class="matrix" id="source-matrix">
+      <thead><tr><th>SOURCE</th><th>READ</th><th>GUIDES</th><th>ROLE</th></tr></thead>
       <tbody></tbody>
     </table>
-    <div class="source-cards" id="sourceCards"></div>
+    <p class="fine">Five trophies carry the label “trigger not yet confirmed”: In The Beginning…, Capital Offense, Bad Luck, I Guess, The Truth Is Out There and Ten Pin. One dispute is shown both ways: the meditation-spot count (18 vs 15) and the Chapter 1 spot. The story is listed as Chapters 1–4 plus a final mission in the kit; PowerPyx describes 5 chapters — an open question, not a claim made here.</p>
   </section>
 </main>
-
-<footer class="foot">
-  <p>LEONIDA GETAWAY — an unofficial fan guide. GTA VI, Grand Theft Auto and Rockstar Games are trademarks of their owners; no official artwork or logos are used. Trophy names, descriptions and grades are the official list (2026-11-18). Guides are written in our own words and cite their sources. Data is stored only in your browser.</p>
-</footer>
-<script src="app.js"></script>
+<footer>LEONIDA GETAWAY — an unofficial fan guide. GTA VI and Grand Theft Auto are trademarks of their owners; no official artwork or logo is used. Data: the official 55 trophies, list of 2026-11-18.</footer>
+<script type="module" src="app.js"></script>
 </body>
 </html>
