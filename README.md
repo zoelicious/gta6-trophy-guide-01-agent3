@@ -1,63 +1,47 @@
 # LEONIDA GETAWAY — GTA VI · PS5 trophy guide
 
-[![make.fun](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun/c/gta6-trophy-guide-01)
-[![make.fun](https://img.shields.io/badge/make.fun-gta6--trophy--guide--01-teal)](https://make.fun/c/gta6-trophy-guide-01)
-[![make.fun](https://img.shields.io/badge/make.fun-strict--transcripts-gold)](https://make.fun/c/gta6-trophy-guide-01)
+[![make.fun](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/c/gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/zoelicious/gta6-trophy-guide-01-agent3/rank.svg)](https://make.fun/c/gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/zoelicious/gta6-trophy-guide-01-agent3/reward.svg)](https://make.fun/c/gta6-trophy-guide-01)
 
-An offline guide + tracker for all **55 PlayStation 5 trophies** of Grand Theft
-Auto VI — built for the [make.fun bounty](https://make.fun/c/gta6-trophy-guide-01)
-"gta6-trophy-guide-01". Entered via referral: https://make.fun/r/nmy46sr8
+An offline web guide + tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI.
+The platinum run is framed as one long getaway across Leonida: a hand-drawn night
+map with trophy pins per region, an 8-stop getaway route to the platinum, a checklist
+that saves in your browser, and a guide for every trophy — written in our own words,
+with every step cited.
 
-## What it is
+**Try it:** `node serve.ts`, then open http://localhost:8080
 
-**LEONIDA GETAWAY** puts the map of Leonida first — as one long getaway route.
-A hand-drawn night map of the state — dark navy sea, dark teal land, thin gold
-roads — carries a pin for every trophy that has a place, grouped by region
-(Vice City, Leonida Keys, Port Gellhorn, Mount Kalaga, Grassrivers, Ambrosia,
-Hamlet, Yorktown). Click a pin (or any checklist row) and the trophy's full
-guide opens beside the map. The platinum run is framed as the getaway itself:
-8 stops along the route, from Vice City to the platinum.
+**What is inside**
 
-- **Tracker** — checklist saved in the browser (localStorage), export / import
-  progress as JSON, filters by kind / grade / category, "not yet earned",
-  name search, per-trophy target counters (0/250 stunts, 0/18 meditations…),
-  and a spoiler setting that hides story and hidden trophies until earned.
-- **Roadmap to the platinum** — 8 stops drawn as a numbered gold route across
-  the map: manual saves first (no mission replay, no New Game+), story, side
-  strands, activities, collections, crime, money & grind, cleanup, platinum.
-  About ~200 hours, difficulty 4/10, one playthrough, all offline.
-- **Missables** — 3 trophies with a point of no return (1 missable + 2
-  time-sensitive), each with its point of no return spelled out, plus the two
-  warnings every hunter needs: no mission replay / no New Game+, and cheats
-  disable trophies.
-- **Honest where the data is not there yet** — 5 trophies whose unlock trigger
-  is not yet confirmed in public are labelled exactly that, with only what is
-  known written down. Nothing is invented.
+- **Map** — stylized Leonida night map (dark navy sea, teal land, gold route) with
+  33 trophy pins. Positive Mental Attitude is open on the cover, with its counter
+  stepper (6/18), numbered cited steps, official description, and the 18-vs-15
+  dispute shown both ways.
+- **Checklist** — filter by kind, grade, region, search, earned / not-yet-earned,
+  and order by Roadmap, Region or Category. Spoiler mode masks the 28 hidden
+  trophies until earned. Progress saves in the browser; export / import as JSON.
+- **Roadmap** — the getaway route: 8 stops from Vice City to the platinum
+  (~200 h, 4/10, all offline, no mission replay, no New Game+).
+- **Missables** — 3 trophies with a point of no return (1 possibly missable +
+  2 time-sensitive), plus the no-replay / no-cheats warnings and the hidden
+  trophies grouped by chapter.
+- **Progress & export** — PSN points toward the platinum (135 / 1,230 pts),
+  earned by grade and by kind, roadmap stages, and backup metadata.
+- **Sources** — 13 sources read 19–20 Nov 2026, with a cited-by count per
+  source. 55/55 guides cite a source; 165/165 steps are cited.
 
-## Data
+**Honesty notes**
 
-`app/data/trophies.json` holds the official 55 trophies — name, description and
-grade exactly as PlayStation publishes them (1 platinum, 2 gold, 6 silver,
-46 bronze, 28 hidden) — plus a guide in our own words for every trophy, with
-its sources named beside it. Sources: Exophase, PSNProfiles, PowerPyx,
-OutputLag, eGamers, KeenGamer, GTA Zone, U7BUY, GTAViceCityHub, HowToVideoGame,
-GTAVice.net, CryptoGames and LeonidaHub (all retrieved 2026-11-20).
+- 5 trophies have triggers not yet confirmed in public guides (In The Beginning…,
+  Capital Offense, Bad Luck, I Guess, The Truth Is Out There, Ten Pin). Their
+  panels say so and invent no unlock method.
+- The Chapter 1 meditation spot is described two ways by the sources (PowerPyx:
+  Jason's house; OutputLag / eGamers: a balcony early in Chapter 1). Both
+  versions are shown.
+- The chapter count is an open question (kit: Chapter 1–4 + final mission;
+  PowerPyx: 5 chapters). No count is claimed without a source.
 
-## Run it
+**Referral:** https://make.fun/r/nmy46sr8
 
-No build step, no network. Serve `app/` with any static server and open
-`index.html` in desktop Chrome:
-
-```sh
-node serve.ts        # serves app/ at http://localhost:8080
-```
-
-## Handing in
-
-`main.ts` (Node 22, standard library only) copies `app/` and `screenshots/`
-to `/output` (or `$MAKEFUN_OUTPUT_DIR`) and writes `/output/dossier.json`
-with `buildDossier` from `vendor/makefun-frontend.ts`.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
+**License:** MIT. Unofficial fan guide — no Rockstar logo or official artwork is used.

@@ -1,62 +1,1416 @@
 {
-"1": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Earn the other 54 trophies first — the platinum has no task of its own.", "c": [1, 5]}, {"t": "Follow the 8 stops in order so nothing is left to chance at the end.", "c": [1, 3]}, {"t": "Check A Long Road (100%) before the final cleanup, then watch the platinum pop.", "c": [1, 3]}]},
-"2": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "Start the story and play the opening mission, Gone Fishing, to its end.", "c": [5, 6]}, {"t": "The trophy pops when the mission ends — it is mandatory, so it cannot be missed.", "c": [1, 2]}, {"t": "Use this early stretch to learn the controls and scan vehicles as you go.", "c": [1, 3]}]},
-"3": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "Play every story mission in Chapter 1 through to the chapter finale.", "c": [5, 6]}, {"t": "Before leaving Chapter 1, meditate at the early Chapter 1 spot — it is gone for good after the chapter closes.", "c": [1, 2, 4]}, {"t": "Make a manual save at the start of Chapter 2: there is no mission replay and no New Game+.", "c": [1, 3]}]},
-"4": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Play through Chapter 2, once Jason and Lucia are both playable.", "c": [5, 6]}, {"t": "Finish the chapter's story missions and the trophy pops at the chapter's end.", "c": [1, 2]}, {"t": "Take side content as it appears in Chapter 2 instead of leaving it all for post-story cleanup.", "c": [1, 3]}]},
-"5": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "Play through Chapter 3's story missions to the chapter's end.", "c": [5, 6]}, {"t": "Do stranger missions the moment they appear in Chapter 3 — the race against Yago strand is time-sensitive.", "c": [1, 3]}, {"t": "Watch for robbery trophies opening in Chapter 3: bank vaults and armored trucks.", "c": [2, 3]}]},
-"6": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Play through Chapter 4's story missions to the chapter's end.", "c": [5, 6]}, {"t": "Before the final mission, make a manual save — it is your only way back to anything story-gated.", "c": [1, 3]}, {"t": "After the credits, free roam stays open and almost everything else can still be finished.", "c": [1, 2]}]},
-"7": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Finish the final mission after Chapter 4 and watch the credits.", "c": [5, 6]}, {"t": "Before starting it, check the Missables tab: the Chapter 1 meditation spot and the time-sensitive stranger strand must already be done.", "c": [1, 3]}, {"t": "Once the credits roll, free roam opens and the cleanup stops begin.", "c": [1, 2]}]},
-"8": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "Play the story until the mission Breakfast Run appears.", "c": [5, 6]}, {"t": "Complete the mission — the trophy pops when it ends.", "c": [1, 2]}, {"t": "No source reports this mission as optional or branching, so it cannot be missed.", "c": [1, 3]}]},
-"9": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "Play the story until the mission The Cartel Heist appears.", "c": [5, 6]}, {"t": "Complete the heist mission — the trophy pops when it ends.", "c": [1, 2]}, {"t": "Treat heist missions as practice for the freeroam robbery trophies that open later.", "c": [1, 3]}]},
-"10": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Play the story until the mission Child's Play appears.", "c": [5, 6]}, {"t": "Complete the mission — the trophy pops when it ends.", "c": [1, 2]}, {"t": "This is one of the twelve story trophies hidden on PSN until earned.", "c": [6, 5]}]}
-,
-"11": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "Play the story until the mission Headliners appears.", "c": [5, 6]}, {"t": "Complete the mission — the trophy pops when it ends.", "c": [1, 2]}, {"t": "Keep a manual save at the start of each chapter anyway: with no mission replay, a chapter-start save is the only way back.", "c": [1, 3]}]},
-"12": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Play the story until the mission VCIA Takedown appears, around the airport.", "c": [5, 6]}, {"t": "Complete the mission — the trophy pops when it ends.", "c": [1, 2]}, {"t": "Remember the airport layout: it matters again later for the unscheduled departure trophy.", "c": [1, 3]}]},
-"13": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Play the story until the mission Operation Savage Glory appears.", "c": [5, 6]}, {"t": "Complete the mission — the trophy pops when it ends.", "c": [1, 2]}, {"t": "By this point the Chapter 1 meditation spot should already be banked — if not, and you are past Chapter 1, only a chapter-start save can save the run.", "c": [1, 4]}]},
-"14": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "Open the 100% checklist (Progress > Stats > 100% Completion) once it becomes visible after the story.", "c": [1, 3]}, {"t": "Do optional missions when they appear — they close mid-story and feed the checklist.", "c": [1, 3]}, {"t": "Aim for the forgiving thresholds (about 60% true completion: 200 of 277 vehicles, 100 of 255 animals, 50 of 66 weapons, 70 of 80 challenges) while completing robberies, underwater discoveries, shooting ranges, drone races and Bret's quests in full.", "c": [1, 9]}]},
-"15": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "Find a jump or ramp with a clean landing zone and repeat it in free roam after the story.", "c": [1, 2]}, {"t": "Land 250 stunts — air time and a clean landing both count toward the total.", "c": [5, 6]}, {"t": "Keep going to 300 stunts if you are chasing A Long Road, which wants more than the trophy does.", "c": [1, 3]}]},
-"16": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Try each of the 9 activity types once — one taste of everything is enough.", "c": [5, 6]}, {"t": "Work through the activity trophies on this list (ranges, drone races, races, fishing, arcade, bowling) and this fills itself in.", "c": [1, 3]}, {"t": "Tick each type off in the counter so you can see which one is still missing.", "c": [1]}]},
-"17": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "Visit the Shooting Ranges across Leonida — 42 challenges in total.", "c": [5, 6]}, {"t": "Earn a gold medal in each challenge, one at a time rather than in a single sitting.", "c": [1, 4]}, {"t": "Ranges must also be fully complete for the 100% checklist, so there is no shortcut around them.", "c": [1, 3]}]},
-"18": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Find the Top Fun Drone Race locations — 14 of them across Leonida.", "c": [5, 6]}, {"t": "Learn each course's line before racing it for the win — a practice lap beats three rushed attempts.", "c": [1, 3]}, {"t": "Drone races must also be fully complete for the 100% checklist.", "c": [1, 3]}]},
-"19": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Pick a fast, stable car and learn the braking points.", "c": [1, 3]}, {"t": "Win 20 different races — each race counts once, so variety matters more than repeating a favourite.", "c": [5, 6]}, {"t": "Work through the race list region by region.", "c": [1, 2]}]},
-"20": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "Take Cal's fishing challenge when it appears.", "c": [1, 2]}, {"t": "Watch the line tension, reel steadily, and do not rush the catch.", "c": [1, 3]}, {"t": "Beat Cal and the trophy pops.", "c": [5, 6]}]}
-,
-"21": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "Find an arcade machine in Vice City.", "c": [5, 6]}, {"t": "Pick the game you find easiest and play it through to completion.", "c": [1, 3]}, {"t": "Finishing one run is enough — no leaderboard score is needed.", "c": [1, 2]}]},
-"22": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Take Andy's missions whenever they appear.", "c": [1, 2]}, {"t": "Follow the strand through to its final mission.", "c": [5, 6]}, {"t": "Complete the final mission for Andy and the trophy pops.", "c": [1, 3]}]},
-"23": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "Take Kenton's missions whenever they appear.", "c": [1, 2]}, {"t": "Follow the strand through to its final mission.", "c": [5, 6]}, {"t": "Complete the final mission for Kenton and the trophy pops.", "c": [1, 3]}]},
-"24": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Take Billy's missions whenever they appear.", "c": [1, 2]}, {"t": "Follow the strand through to its final mission — it runs through the Mount Kalaga area.", "c": [5, 6]}, {"t": "Complete the final mission for Billy and the trophy pops.", "c": [1, 3]}]},
-"25": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Start every stranger strand the moment its icon appears on the map.", "c": [1, 3]}, {"t": "In Chapter 3, do the race against Yago strand at once — it closes mid-story.", "c": [1, 3]}, {"t": "Complete 8 stranger strands in total and the silver pops.", "c": [5, 6]}]},
-"26": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "Take Randy's missions whenever they appear.", "c": [1, 2]}, {"t": "Follow the strand through to its final mission.", "c": [5, 6]}, {"t": "Complete the final mission for Randy and the trophy pops.", "c": [1, 3]}]},
-"27": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "Take Tyrone's missions whenever they appear.", "c": [1, 2]}, {"t": "Follow the strand through to its final mission — it runs through the Ambrosia area.", "c": [5, 6]}, {"t": "Complete the final mission for Tyrone and the trophy pops.", "c": [1, 3]}]},
-"28": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "hub", "htv", "cry"], "steps": [{"t": "In Chapter 1, meditate at the early spot the moment you see it — it disappears permanently once the chapter closes.", "c": [1, 2, 4]}, {"t": "After Chapter 1, meditate at every spot you pass in each region; never walk past one.", "c": [1, 3]}, {"t": "Track your count with the stepper below and check it reads 18/18 before the cleanup stop.", "c": [6, 1]}], "dispute": {"title": "SOURCES DISAGREE — both versions shown", "versions": [{"label": "Version A — 18 spots (PSN target 0/18; PowerPyx, OutputLag, eGamers, KeenGamer)", "text": "There are 18 meditation spots in 10 locations across Leonida, and the PSN counter runs to 18. The early Chapter 1 spot is required — and missable."}, {"label": "Version B — 15 spots (some launch guides count 15)", "text": "Some launch guides count only 15 meditation spots. The total is disputed."}, {"label": "The Chapter 1 spot — two descriptions, one warning", "text": "PowerPyx places the Chapter 1 spot at Jason's house. OutputLag and eGamers describe a balcony meditation early in Chapter 1. They may be the same spot described differently — either way, meditate at every spot you see in Chapter 1. Safe play: track to 18, the higher count and the PSN target."}]}},
-"29": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "Take Bret's hunt when he offers it.", "c": [1, 2]}, {"t": "Track the unique animal and take the shot cleanly.", "c": [1, 3]}, {"t": "Bret's quests must be fully complete for the 100% checklist, so this is part of the A Long Road work.", "c": [1, 3]}]},
-"30": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Search for collectible cards across Leonida, region by region.", "c": [1, 2]}, {"t": "Clear one region's cards before moving to the next.", "c": [1, 3]}, {"t": "Complete 3 full card sets and the silver pops.", "c": [5, 6]}]}
-,
-"31": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Use WAiNK It at a new location — every distinct spot counts once.", "c": [5, 6]}, {"t": "Sweep the map region by region instead of repeating the same spots.", "c": [1, 3]}, {"t": "Pair it with exploring all 52 areas: visiting new ground moves both counters.", "c": [1, 3]}]},
-"32": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "Pick the easy challenges first — you only need 50 of them.", "c": [1, 3]}, {"t": "Skip the hardest ones: the 100% checklist itself only needs 70 of 80.", "c": [1, 3]}, {"t": "Work them in the grind stop, when you can cherry-pick by region.", "c": [1, 2]}]},
-"33": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "With your partner beside you, build a 4-star wanted level.", "c": [5, 6]}, {"t": "Pick open ground with escape routes — countryside roads beat downtown dead-ends.", "c": [1, 3]}, {"t": "Break line of sight together and lose the cops with your partner.", "c": [1, 2]}]},
-"34": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Find three shops close together and plan the route between them first.", "c": [1, 3]}, {"t": "With your partner, rob the first shop, then move fast to the second and third.", "c": [5, 6]}, {"t": "Stay wanted the whole time — do not hide or wait the heat out between robberies.", "c": [1, 2]}]},
-"35": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "From the first hour, get into — or scan — every new vehicle you pass.", "c": [1, 3]}, {"t": "Do not always take the same car: variety is what moves the counter.", "c": [1, 2]}, {"t": "Tour regions you have not driven through yet for the rare, region-specific vehicles.", "c": [1, 3]}]},
-"36": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Find a fight with at least 5 enemies close together.", "c": [5, 6]}, {"t": "Wait until five are in range, then trigger Combat Focus.", "c": [1, 3]}, {"t": "Chain the five takedowns without wasting time between them; if it fails, retry the same spot.", "c": [1, 2]}]},
-"37": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Head to VCIA, the Vice City airport — you will know the layout from the story mission.", "c": [1, 2]}, {"t": "Get to a plane on the airfield.", "c": [5, 6]}, {"t": "Take off on your own terms, without a schedule, and the trophy pops.", "c": [1, 3]}]},
-"38": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "Stir up enough heat to draw a Rhino tank out, or look around military presence.", "c": [1, 2]}, {"t": "Get behind the wheel of the Rhino.", "c": [5, 6]}, {"t": "Grab this one early in the crime stop — a stolen tank makes the other crime trophies easier.", "c": [1, 3]}]},
-"39": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "Pick a jewelry store in Vice City and approach it quietly.", "c": [1, 2]}, {"t": "Watch the sightlines, take the goods, and leave before anyone raises the alarm.", "c": [1, 3]}, {"t": "If you are spotted, the attempt is done — leave, let the heat cool, and come back for a clean run.", "c": [1, 2]}]},
-"40": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Plan the approach to a bank vault, then hit it.", "c": [1, 2]}, {"t": "Escape after each vault — a vault only counts if you get away clean.", "c": [5, 6]}, {"t": "Repeat for 5 vaults; robberies must be fully complete for the 100% checklist too.", "c": [1, 3]}]}
-,
-"41": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "Watch the roads for an armored truck on its route.", "c": [1, 2]}, {"t": "Stop the truck and take the cash.", "c": [5, 6]}, {"t": "Have your getaway car ready before you start, and escape — one clean hit is all it takes.", "c": [1, 3]}]},
-"42": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Tour the map deliberately instead of fast-travelling past it — the counter moves when you set foot somewhere new.", "c": [1, 3]}, {"t": "Pair the tour with the WAiNK and card collections: one sweep of a region can move three counters at once.", "c": [1, 2]}, {"t": "Save a dedicated tour for the remote areas at the end (Mount Kalaga, the Keys).", "c": [1, 3]}]},
-"43": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Learn which illegal operation belongs to which gang — every gang counts once.", "c": [1, 3]}, {"t": "Rob one operation from each of the 9 gangs, ticking them off one by one.", "c": [5, 6]}, {"t": "Use the counter to see which gangs are still missing, and work the map region by region.", "c": [1, 2]}]},
-"44": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "The trigger is not yet confirmed in public — do not waste hours guessing.", "c": [1, 4]}, {"t": "What is known: a cocktail with a view on Ocean Beach, and a name that suggests an early-game moment — try it as early as you can.", "c": [1, 2]}, {"t": "Check the sources below again after the launch guides update.", "c": [1, 3]}]},
-"45": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "The trigger is not yet confirmed in public — do not waste hours guessing.", "c": [1, 4]}, {"t": "What is known: smash your way out of a vehicle showroom in classic style — which showroom, and what counts, is not confirmed yet.", "c": [1, 2]}, {"t": "Try it in the cleanup stop, and watch the sources below for a confirmed trigger.", "c": [1, 3]}]},
-"46": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Go to the Kolt & Associates bowling alley in Vice City.", "c": [5, 6]}, {"t": "Pick up a ball and bowl a game — follow through on the lane.", "c": [1, 2]}, {"t": "One game is enough, and it counts as one of the 9 activity types.", "c": [1, 3]}]},
-"47": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "The launch guides do not pin down one exact moment for this trophy.", "c": [1, 3]}, {"t": "Play the story with your partner beside you and take the high-profile things you do together.", "c": [1, 2]}, {"t": "If it has not popped by the cleanup stop, re-check the cited guides — they are still being updated after launch.", "c": [1, 3]}]},
-"48": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Play normally through the story and the side stops — every small decision counts toward the total.", "c": [1, 3]}, {"t": "Engage with the world instead of rushing past it.", "c": [1, 2]}, {"t": "Check the counter in the grind stop and top it up with whatever choices are left.", "c": [6, 1]}]},
-"49": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "The trigger is not yet confirmed in public — do not waste hours guessing.", "c": [1, 4]}, {"t": "What is known: 'Second time's the charm' suggests succeeding at something on a second attempt — but what, and where, is not confirmed.", "c": [1, 2]}, {"t": "Leave it for the cleanup stop and check the sources below for a confirmed trigger.", "c": [1, 3]}]},
-"50": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "htv", "cry"], "steps": [{"t": "The trigger is not yet confirmed in public — do not waste hours guessing.", "c": [1, 4]}, {"t": "What is known: 'What the hell just happened?' points to a strange, unexplained event — which event, and where, is not confirmed.", "c": [1, 2]}, {"t": "Leave it for the cleanup stop and check the sources below for a confirmed trigger.", "c": [1, 3]}]}
-,
-"51": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "gvn", "leo"], "steps": [{"t": "The trigger is not yet confirmed in public — do not waste hours guessing.", "c": [1, 4]}, {"t": "What is known: bowl people over with a melee drive-by — strike from a moving vehicle with a melee weapon — but the exact count and conditions are not confirmed.", "c": [1, 2]}, {"t": "The bowling-alley area is the natural place to try it in cleanup, once a source confirms the trigger.", "c": [1, 3]}]},
-"52": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "cry", "u7b"], "steps": [{"t": "Rob first: Marked Bills come from robberies.", "c": [1, 3]}, {"t": "Launder the bills through your contacts in steady batches, not all at once.", "c": [5, 6]}, {"t": "Start laundering the moment you have bills to wash instead of stockpiling them for the end.", "c": [1, 2]}]},
-"53": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "leo", "hub"], "steps": [{"t": "Buy what you actually use — weapons, ammo, clothes, car upgrades — and the total climbs without waste.", "c": [1, 3]}, {"t": "Every purchase across all shops counts toward the $100,000 total.", "c": [5, 6]}, {"t": "Do it in the grind stop, when robbery and laundering money is there to spend.", "c": [1, 2]}]},
-"54": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "u7b", "htv"], "steps": [{"t": "Earn the cash first — robberies and laundering pay for the garages.", "c": [1, 3]}, {"t": "Buy the 8 garage properties one by one, as you go.", "c": [5, 6]}, {"t": "Each garage stores the vehicles you discover, so buying early helps the vehicle counter too.", "c": [1, 2]}]},
-"55": {"src": ["pyx", "out", "kee", "ega", "exo", "psn", "zon", "hub", "gvn"], "steps": [{"t": "Find vehicles out in the world — the ones you discover for the vehicle counter are natural candidates.", "c": [1, 3]}, {"t": "Register each one through the Scooter Bros app.", "c": [5, 6]}, {"t": "Register 10 vehicles in total, in the grind stop while you tour the regions.", "c": [1, 2]}]}
+ "note": "Three numbered steps per trophy (165 total). Every step cites at least one source by number; the numbers match sources.json. Steps are written in our own words from the cited guides — no guide text is copied.",
+ "steps": [
+  {
+   "id": 1,
+   "steps": [
+    {
+     "cites": [
+      1,
+      6,
+      13
+     ],
+     "text": "Earn the other 54 trophies in any order — the platinum unlocks the moment the last one lands."
+    },
+    {
+     "cites": [
+      1,
+      3
+     ],
+     "text": "Follow the 8-stop route: story first, strands second, then activities, collections, crime and the money grinds."
+    },
+    {
+     "cites": [
+      7
+     ],
+     "text": "Check the in-game 100% checklist (Progress > Stats) before the final cleanup so nothing is left behind."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Start the story and play Gone Fishing, the opening mission, to its end."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "The trophy pops when the mission completes — no extra objective is needed."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Do not use cheats on this save: cheats disable trophies and saving."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Play through every Chapter 1 story mission in order."
+    },
+    {
+     "cites": [
+      1,
+      2,
+      4
+     ],
+     "text": "Before the chapter closes, meditate at the early Chapter 1 spot — it disappears permanently once Chapter 1 ends."
+    },
+    {
+     "cites": [
+      1,
+      12
+     ],
+     "text": "Make a manual save at the start of the chapter so you can go back if you miss the spot."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Play through every Chapter 2 story mission in order."
+    },
+    {
+     "cites": [
+      3
+     ],
+     "text": "From this chapter Jason and Lucia can both be played, which opens most of the map's trophies."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Scan vehicles and study animals as you travel — both count toward the 100% checklist."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Play through every Chapter 3 story mission in order."
+    },
+    {
+     "cites": [
+      1,
+      2,
+      3
+     ],
+     "text": "Start every Strangers & Freaks strand the moment it appears — the race against Yago closes in this chapter."
+    },
+    {
+     "cites": [
+      3
+     ],
+     "text": "Heist trophies start opening from this chapter onward."
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Play through every Chapter 4 story mission in order."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Keep a manual save at the start of the chapter — there is no mission replay."
+    },
+    {
+     "cites": [
+      3
+     ],
+     "text": "Heist trophies continue to open in this chapter."
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Play the story to its final mission."
+    },
+    {
+     "cites": [
+      1,
+      8
+     ],
+     "text": "Make a manual save right before the final mission — it is the last natural stopping point."
+    },
+    {
+     "cites": [
+      3
+     ],
+     "text": "Finish the final mission; free roam stays open afterwards for cleanup."
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Follow the story until the mission Breakfast Run appears."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Play Breakfast Run through to its end."
+    },
+    {
+     "cites": [
+      1,
+      9
+     ],
+     "text": "The trophy unlocks on mission completion — no side objective is required."
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "Follow the story until The Cartel Heist appears (Chapter 3 onward)."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Play The Cartel Heist through to its end."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Heist missions cannot be replayed, so let the story carry you through each one."
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Follow the story until the mission Child's Play appears."
+    },
+    {
+     "cites": [
+      6,
+      11
+     ],
+     "text": "Play Child's Play through to its end."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Named story missions unlock in order — keep pushing the main story."
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Follow the story until the mission Headliners appears."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Play Headliners through to its end."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "The trophy follows mission completion with no extra requirement."
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Follow the story until the mission VCIA Takedown appears."
+    },
+    {
+     "cites": [
+      6,
+      8
+     ],
+     "text": "Play VCIA Takedown through to its end."
+    },
+    {
+     "cites": [
+      2
+     ],
+     "text": "The mission takes place around the airport — a good moment to try the airport trophies nearby."
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Follow the story until Operation Savage Glory appears late in the story."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Play Operation Savage Glory through to its end."
+    },
+    {
+     "cites": [
+      1,
+      9,
+      12
+     ],
+     "text": "It arrives naturally if you keep the main story moving."
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "steps": [
+    {
+     "cites": [
+      1,
+      3,
+      10,
+      13
+     ],
+     "text": "Open the 100% checklist (Progress > Stats > 100% Completion) once it appears after the story."
+    },
+    {
+     "cites": [
+      1,
+      4
+     ],
+     "text": "Finish the must-complete parts in full: Robberies, Underwater Discoveries, Shooting Ranges, Drone Races and Bret's Quests."
+    },
+    {
+     "cites": [
+      1,
+      12
+     ],
+     "text": "Do optional missions when they appear — the checklist bar is forgiving (about 60% true completion), but optional content that closes mid-story is not coming back."
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Find a jump or ramp with a clean landing zone and repeat it in free roam after the story."
+    },
+    {
+     "cites": [
+      4,
+      7,
+      11
+     ],
+     "text": "Land 250 stunts — air time and a clean landing both count toward the total."
+    },
+    {
+     "cites": [
+      1,
+      3
+     ],
+     "text": "Keep going to 300 stunts if you are chasing A Long Road, which wants more than the trophy does."
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Visit each activity type once: ranges, races, arcade, bowling, fishing and the rest."
+    },
+    {
+     "cites": [
+      3,
+      7
+     ],
+     "text": "One attempt at each of the 9 types is enough — you do not need to win or master any of them."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Most types unlock as you explore the map, so try them as you travel."
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Visit the Shooting Ranges and work through the 42 challenges."
+    },
+    {
+     "cites": [
+      3,
+      7,
+      8
+     ],
+     "text": "Practice each weapon class until the gold time or score is comfortable."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Clear them one by one in free roam — ranges stay open and there is no missable window."
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Find the Top Fun drone race locations — 14 in total across Leonida."
+    },
+    {
+     "cites": [
+      4,
+      7
+     ],
+     "text": "Learn each course's corners, then race for the win at every location."
+    },
+    {
+     "cites": [
+      1,
+      9
+     ],
+     "text": "Every drone race is also required for the 100% checklist, so this feeds A Long Road directly."
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "Enter races across Leonida — each distinct race counts once toward the 20."
+    },
+    {
+     "cites": [
+      4,
+      7
+     ],
+     "text": "Win 20 different races; a repeat win on the same route does not add to the count."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Vary the events instead of repeating one favourite route."
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Follow the fishing thread through the side-story contacts until Cal's challenge is offered."
+    },
+    {
+     "cites": [
+      4,
+      11
+     ],
+     "text": "Take the fishing challenge as soon as it appears."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Beat Cal in the challenge to close the strand."
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Find an arcade cabinet at an arcade in the city."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Start any arcade game and play it through to its end screen."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "One full completion is all it takes — no high score is required."
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Meet Andy and take his first mission when it appears."
+    },
+    {
+     "cites": [
+      6,
+      8
+     ],
+     "text": "Work through Andy's missions in order as they appear."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Finish his final mission to close the strand."
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Meet Kenton and take his first mission when it appears."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Work through Kenton's missions in order as they appear."
+    },
+    {
+     "cites": [
+      1,
+      9,
+      12
+     ],
+     "text": "Finish his final mission to close the strand."
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "Meet Billy and take his first mission when it appears."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Work through Billy's missions in order as they appear."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Finish his final mission — the strand stays available after the story."
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Start every stranger strand the moment it appears on the map."
+    },
+    {
+     "cites": [
+      1,
+      2,
+      3,
+      11
+     ],
+     "text": "Do the strand tied to the race against Yago in Chapter 3 — it closes mid-story."
+    },
+    {
+     "cites": [
+      4,
+      7
+     ],
+     "text": "Complete 8 strands in total; the rest stay open after the credits."
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Meet Randy and take his first mission when it appears."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Work through Randy's missions in order as they appear."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Finish his final mission to close the strand."
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Meet Tyrone and take his first mission when it appears."
+    },
+    {
+     "cites": [
+      6,
+      8
+     ],
+     "text": "Work through Tyrone's missions in order as they appear."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Finish his final mission — no special requirement beyond the chain."
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      4,
+      13
+     ],
+     "text": "Meditate at every meditation spot the moment you see one — never walk past a spot."
+    },
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Do the early Chapter 1 spot before the chapter closes; it is gone for good afterwards."
+    },
+    {
+     "cites": [
+      1,
+      3,
+      9
+     ],
+     "text": "Work through all 10 locations until the PSN counter reads 18/18 (some guides count 15 — both versions are shown in the panel)."
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "Follow Bret's strand and take his hunts as they are offered."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Track the unique animal Bret names for each hunt."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Take the animal down to complete the hunt — his quests must all be finished for 100%."
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Pick up collectible cards wherever you find them across Leonida."
+    },
+    {
+     "cites": [
+      4,
+      7,
+      11
+     ],
+     "text": "Keep track of which sets are incomplete and hunt the missing cards."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Complete 3 full sets — a set only counts once all of its cards are in hand."
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Use WAiNK at locations as you travel — it is a travel checklist."
+    },
+    {
+     "cites": [
+      4,
+      7
+     ],
+     "text": "WAiNK at 100 locations; the count climbs as you cross the map for other trophies."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Pair WAiNK stops with card hunting and area exploration so one trip covers three lists."
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Take on challenges as they appear — stunts, driving, combat and more."
+    },
+    {
+     "cites": [
+      4,
+      7,
+      8
+     ],
+     "text": "Complete 50 challenges; they tick over naturally while you chase the other trophies."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Keep going to 70 if you are chasing A Long Road, which wants more than the trophy does."
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Bring your partner along and build a 4-star wanted level together."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Break line of sight using back roads and water, and keep moving."
+    },
+    {
+     "cites": [
+      1,
+      9,
+      12
+     ],
+     "text": "Escape together until the stars clear — do not split up mid-chase."
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "With your partner, plan a short route between three nearby shops."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Rob the three shops back-to-back, fast, without ever losing your wanted level between them."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "If the stars clear mid-run the chain breaks — start the run over."
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Scan every vehicle you meet — scanning counts toward discovery."
+    },
+    {
+     "cites": [
+      4,
+      7,
+      11
+     ],
+     "text": "Discover 100 vehicles; scan early and often instead of leaving it for cleanup."
+    },
+    {
+     "cites": [
+      1,
+      3
+     ],
+     "text": "The 100% checklist wants 200 of 277 vehicles, so keep scanning past 100 for A Long Road."
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Pick a fight with a group of enemies standing close together."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Trigger Combat Focus once the group is in range."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Chain 5 takedowns before Combat Focus ends — a crowded spot with cover nearby helps."
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Head to Vice City International Airport in free roam."
+    },
+    {
+     "cites": [
+      4,
+      8
+     ],
+     "text": "Find a plane on the airfield."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Take off without a flight plan — an unscheduled departure is the whole ask."
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Find where the military keeps its Rhino tanks."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Take a Rhino and drive it out."
+    },
+    {
+     "cites": [
+      1,
+      9
+     ],
+     "text": "The trophy pops once you are rolling in the tank."
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "Pick a jewelry store and case it first — watch the sightlines and the staff."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Go in quiet, take what you came for, and leave before anyone raises the alarm."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "If you are detected the attempt fails — patience beats speed here."
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Plan each bank vault, get in and out clean, and escape."
+    },
+    {
+     "cites": [
+      3,
+      7,
+      11
+     ],
+     "text": "Rob 5 bank vaults in total, escaping each time."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Vaults are among the robberies the 100% checklist requires in full, so they feed A Long Road too."
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Learn the armored truck routes through the city."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Intercept a truck, crack it open and grab the cash."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Break away before the response arrives — the escape is part of the trophy."
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Travel through every region of Leonida, area by area."
+    },
+    {
+     "cites": [
+      3,
+      7,
+      8
+     ],
+     "text": "Visit all 52 areas — the counter ticks as each new area is entered."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Pair exploration with WAiNK stops and card hunting so one trip covers three lists."
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Find the illegal operation each gang runs somewhere in Leonida."
+    },
+    {
+     "cites": [
+      4,
+      7
+     ],
+     "text": "Rob one operation per gang — 9 gangs in total."
+    },
+    {
+     "cites": [
+      1,
+      9,
+      12
+     ],
+     "text": "A repeat hit on the same gang does not advance the count."
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10,
+      13
+     ],
+     "text": "Head to Ocean Beach early — the name points to a first-chapter moment."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Look for the cocktail spot with the view the description names."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Trigger not yet confirmed: do it as early as you can and check the cited guides for the latest word."
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Find a vehicle showroom you can enter."
+    },
+    {
+     "cites": [
+      4,
+      11
+     ],
+     "text": "Try smashing your way out in classic style, as the description says."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Trigger not yet confirmed: no public guide pins the exact showroom or move yet."
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "text": "Head to the Kolt & Associates bowling alley."
+    },
+    {
+     "cites": [
+      6
+     ],
+     "text": "Start a game and bowl through it."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Follow through to the end of the game — one full game at that alley is the ask."
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Play alongside your partner through story and free roam."
+    },
+    {
+     "cites": [
+      4,
+      8
+     ],
+     "text": "Take on partner activities and shared moments as they come up."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "The exact trigger is still being pinned down — watch the cited guides for the latest word."
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Play the game normally — choices accumulate across dialogue, story decisions and the small calls in between."
+    },
+    {
+     "cites": [
+      7
+     ],
+     "text": "Keep the stepper here to watch the count climb toward 500."
+    },
+    {
+     "cites": [
+      1,
+      9
+     ],
+     "text": "This is a pure long-haul counter: it grows while you play everything else."
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "The description hints at a second attempt succeeding where the first did not."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Replay the kind of moment that failed once and try it again."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Trigger not yet confirmed: no public guide pins the exact moment yet."
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "The description suggests a surprising or strange event somewhere in Leonida."
+    },
+    {
+     "cites": [
+      4,
+      11
+     ],
+     "text": "Keep playing and watch for the odd moment the name hints at."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Trigger not yet confirmed: check the cited guides for the latest word rather than guessing."
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      5,
+      13
+     ],
+     "text": "The description points to a melee drive-by that bowls people over."
+    },
+    {
+     "cites": [
+      4
+     ],
+     "text": "Set up a drive-by with a melee weapon instead of a gun."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Trigger not yet confirmed: no public guide pins the exact setup yet."
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Earn Marked Bills from robberies and jobs."
+    },
+    {
+     "cites": [
+      3,
+      7,
+      8
+     ],
+     "text": "Feed the bills through your contacts steadily instead of sitting on them."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Launder $250,000 in total — the count climbs as you work the crime stops of the route."
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Buy what you need for the other trophies — weapons, clothes, cars and upgrades all count."
+    },
+    {
+     "cites": [
+      7
+     ],
+     "text": "Spend across all shops, not just one store."
+    },
+    {
+     "cites": [
+      1,
+      9,
+      12
+     ],
+     "text": "The $100,000 total takes care of itself by the end of the route."
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2,
+      10
+     ],
+     "text": "Earn cash through jobs, robberies and laundering."
+    },
+    {
+     "cites": [
+      3,
+      7
+     ],
+     "text": "Buy each garage property as soon as you can afford it."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "The trophy pops with the eighth deed — keep some cash in reserve for the last ones."
+    }
+   ]
+  },
+  {
+   "id": 55,
+   "steps": [
+    {
+     "cites": [
+      1,
+      2
+     ],
+     "text": "Find vehicles you want to keep while exploring."
+    },
+    {
+     "cites": [
+      4,
+      7,
+      11
+     ],
+     "text": "Register each one through the Scooter Bros app."
+    },
+    {
+     "cites": [
+      1
+     ],
+     "text": "Repeat until 10 vehicles are on the books — it pairs with discovering 100 vehicles for Whip It Good."
+    }
+   ]
+  }
+ ]
 }
