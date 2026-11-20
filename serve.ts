@@ -1,34 +1,34 @@
-// Dev server for LEONIDA GETAWAY: serves app/ at http://localhost:8080.
-// Static files only, standard library. Run: node serve.ts
+// Serves app/ on http://localhost:8080 for local testing. Node 22 only.
+import { createReadStream } from 'node:fs';
+import { stat } from 'node:fs/promises';
 import { createServer } from 'node:http';
-import { existsSync, readFileSync, statSync } from 'node:fs';
-import { extname, join } from 'node:path';
+import { join, normalize } from 'node:path';
 
-const root = join(new URL('.', import.meta.url).pathname, 'app');
-const types = {
+const MIME = {
   '.html': 'text/html; charset=utf-8',
-  '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
   '.mjs': 'text/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
-  '.png': 'image/png',
   '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg',
-  '.svg': 'image/svg+xml'
+  '.png': 'image/png',
+  '.svg': 'image/svg+xml',
 };
 
-const server = createServer((req, res) => {
-  const urlPath = decodeURIComponent((req.url || '/').split('?')[0]);
-  const filePath = join(root, urlPath === '/' ? 'index.html' : urlPath);
-  if (!filePath.startsWith(root) || !existsSync(filePath) || !statSync(filePath).isFile()) {
-    res.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' });
-    res.end('not found: ' + urlPath);
-    return;
+const root = new URL('./app/', import.meta.url).pathname;
+const server = createServer(async (req, res) => {
+  const path = normalize(join(root, decodeURIComponent(req.url?.split('?')[0] ?? '/')));
+  if (!path.startsWith(root)) { res.writeHead(403); res.end(); return; }
+  const file = path.endsWith('/') ? join(path, 'index.html') : path;
+  try {
+    const st = await stat(file);
+    if (!st.isFile()) throw new Error('not a file');
+    const ext = file.slice(file.lastIndexOf('.'));
+    res.writeHead(200, { 'content-type': MIME[ext] ?? 'application/octet-stream' });
+    createReadStream(file).pipe(res);
+  } catch {
+    res.writeHead(404, { 'content-type': 'text/plain' });
+    res.end('not found');
   }
-  res.writeHead(200, { 'content-type': types[extname(filePath)] || 'application/octet-stream' });
-  res.end(readFileSync(filePath));
 });
-
-server.listen(8080, () => {
-  console.log('LEONIDA GETAWAY at http://localhost:8080');
-});
+server.listen(8080, () => console.log('LEONIDA GETAWAY at http://localhost:8080'));

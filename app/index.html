@@ -7,180 +7,117 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar">
+<header class="top">
   <div class="brand">
-    <div class="brand-title"><span class="star">✦</span> LEONIDA GETAWAY</div>
+    <div class="brand-title">✦ LEONIDA GETAWAY</div>
     <div class="brand-sub">GTA VI · PS5 trophy guide · 55 trophies · ~200 h · 4/10 · all offline</div>
   </div>
-  <div class="progress-block">
-    <div class="progress-line">
-      <span id="earnedCount" class="earned-big">8/55 · 15%</span>
-      <span id="psnPoints" class="psn">135 / 1,230 PSN pts</span>
-      <span class="grade-chips">
-        <span class="chip p">P <b id="chipP">0/1</b></span>
-        <span class="chip g">G <b id="chipG">0/2</b></span>
-        <span class="chip s">S <b id="chipS">1/6</b></span>
-        <span class="chip b">B <b id="chipB">7/46</b></span>
-      </span>
-      <span class="progress-bar"><span id="progressFill" class="fill" style="width:15%"></span></span>
-    </div>
-  </div>
-  <div class="top-controls">
-    <button id="spoilerToggle" class="btn spoiler" type="button">Spoilers hidden · 23</button>
-    <span id="savedAt" class="saved">✓ Saved in this browser · --:--</span>
-    <button id="exportBtn" class="btn" type="button">Export</button>
-    <button id="importBtn" class="btn" type="button">Import</button>
-    <input id="importFile" type="file" accept=".json,application/json" hidden>
+  <div class="head-progress">
+    <div class="head-count" id="headCount">0/55 · 0%</div>
+    <div class="head-pts" id="headPts">0 / 1,230 PSN pts</div>
+    <div class="grade-chips" id="gradeChips"></div>
+    <div class="head-bar"><span id="headBarFill"></span></div>
   </div>
 </header>
-
-<nav class="tabs" aria-label="Sections">
-  <button class="tab-btn active" data-tab="map" type="button">Map</button>
-  <button class="tab-btn" data-tab="checklist" type="button">Checklist</button>
-  <button class="tab-btn" data-tab="roadmap" type="button">Roadmap</button>
-  <button class="tab-btn" data-tab="missables" type="button">Missables</button>
-  <button class="tab-btn" data-tab="progress" type="button">Progress &amp; export</button>
-  <button class="tab-btn" data-tab="sources" type="button">Sources</button>
+<div class="controls">
+  <button class="pill" id="spoilerBtn" type="button">Spoilers hidden · 28</button>
+  <span class="saved" id="savedLine">No saved progress yet</span>
+  <span class="spacer"></span>
+  <button class="btn" id="exportBtn" type="button">Export</button>
+  <button class="btn" id="importBtn" type="button">Import</button>
+  <input type="file" id="importFile" accept=".json,application/json" hidden>
+</div>
+<nav class="tabs" id="tabs">
+  <button type="button" data-tab="map" class="active">Map</button>
+  <button type="button" data-tab="checklist">Checklist</button>
+  <button type="button" data-tab="roadmap">Roadmap</button>
+  <button type="button" data-tab="missables">Missables</button>
+  <button type="button" data-tab="progress">Progress &amp; export</button>
+  <button type="button" data-tab="sources">Sources</button>
 </nav>
-
-<div id="auditStrip" class="audit-strip" role="note"></div>
-
+<div class="audit" id="auditStrip">Loading the guide…</div>
 <main>
-  <section id="tab-map" class="tab-panel active">
+  <section class="tab-page active" id="page-map">
     <h1>Leonida, mapped for the getaway</h1>
     <p class="lede">The platinum run is one long getaway across Leonida. Every pin is a trophy with a place — click a pin, or a region below, to open its guide. The gold line is the getaway route: 8 stops from Vice City to the platinum (see Roadmap tab).</p>
     <div class="cols">
-      <div class="map-col">
-        <div id="mapSvg" class="map-box" role="img" aria-label="Stylised night map of Leonida with trophy pins"></div>
+      <div class="col-map">
+        <div class="map-wrap" id="mapWrap"></div>
         <div class="legend">
           <span><i class="dot gold"></i> trophy with a place</span>
           <span><i class="dot red"></i> missable / time-sensitive</span>
           <span><i class="dot purple"></i> trigger not yet confirmed</span>
           <span><i class="dot ring"></i> earned</span>
         </div>
-        <div id="regionChips" class="region-chips"></div>
+        <div class="regions" id="regionCards"></div>
       </div>
-      <aside class="detail-panel" aria-label="Trophy detail"></aside>
+      <aside class="col-detail" id="detailPanel"></aside>
     </div>
   </section>
-
-  <section id="tab-checklist" class="tab-panel">
+  <section class="tab-page" id="page-checklist">
     <h1>Checklist — every trophy, in getaway order</h1>
     <p class="lede">Tick trophies off as you earn them. Progress saves in this browser automatically, and exports as a JSON file you can carry to another machine.</p>
     <div class="cols">
-      <div class="list-col">
-        <div class="filters">
-          <div id="filterChips" class="filter-chips"></div>
-          <div class="filter-row">
-            <input id="searchInput" type="search" placeholder="Search a trophy by name…" aria-label="Search trophies">
-            <label>Order
-              <select id="orderSelect">
-                <option value="roadmap" selected>Roadmap</option>
-                <option value="region">Region</option>
-                <option value="category">Category</option>
-              </select>
-            </label>
-            <label>Grade
-              <select id="gradeSelect">
-                <option value="all" selected>All grades</option>
-                <option value="platinum">Platinum</option>
-                <option value="gold">Gold</option>
-                <option value="silver">Silver</option>
-                <option value="bronze">Bronze</option>
-              </select>
-            </label>
-            <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
-            <label class="check"><input id="notYet" type="checkbox"> Not yet earned</label>
-          </div>
-          <div id="listStatus" class="list-status"></div>
+      <div class="col-list">
+        <div class="filters" id="filterBar"></div>
+        <div class="filter-row">
+          <input type="search" id="searchBox" placeholder="Search a trophy by name…" aria-label="Search trophies">
+          <label>Order <select id="orderSel"><option value="roadmap">Roadmap</option><option value="region">Region</option><option value="category">Category</option></select></label>
+          <label>Grade <select id="gradeSel"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+          <label><input type="checkbox" id="earnedOnly"> Earned only</label>
+          <label><input type="checkbox" id="notEarned"> Not yet earned</label>
         </div>
-        <div id="checklistGroups"></div>
+        <div class="list-meta" id="listMeta"></div>
+        <div id="trophyList"></div>
       </div>
-      <aside class="detail-panel" aria-label="Trophy detail"></aside>
+      <aside class="col-detail" id="detailPanel2"></aside>
     </div>
   </section>
-
-  <section id="tab-roadmap" class="tab-panel">
+  <section class="tab-page" id="page-roadmap">
     <h1>The getaway route — 8 stops to the platinum</h1>
-    <p class="lede" id="roadmapMeta">8 stops in order · ~200 h (PowerPyx, KeenGamer) · one playthrough · all offline · cheats disable trophies. The gold route below is the journey: it starts in Vice City, crosses every region, and ends at the platinum.</p>
+    <p class="lede">8 stops in order · ~200 h (PowerPyx, KeenGamer) · one playthrough · all offline · cheats disable trophies. The gold route below is the journey: it starts in Vice City, crosses every region, and ends at the platinum.</p>
     <div class="cols">
-      <div class="map-col">
-        <div id="mapSvgMini" class="map-box" role="img" aria-label="Mini night map of Leonida with the 8 getaway stops"></div>
-        <p class="caption">Waypoints 0–7 = the 8 stops. Click a waypoint to jump to its card.</p>
+      <div class="col-map">
+        <div class="map-wrap" id="routeMapWrap"></div>
+        <p class="hint">Waypoints 0–7 are the 8 stops. Click a waypoint to jump to its card.</p>
+        <div id="stageCards"></div>
       </div>
-      <div id="stopCards" class="stop-cards"></div>
+      <aside class="col-detail" id="detailPanel3"></aside>
     </div>
   </section>
-
-  <section id="tab-missables" class="tab-panel">
+  <section class="tab-page" id="page-missables">
     <h1>Missables · 3 with a point of no return</h1>
     <p class="lede">Built from the official descriptions + cited launch guides. One trophy is missable outright; two more are time-sensitive — their windows close mid-story.</p>
-    <div id="missableCards" class="missable-grid"></div>
-    <div class="warn-grid">
+    <div class="miss-cards" id="missCards"></div>
+    <div class="warn-row">
       <div class="warn-box">
-        <h2>No mission replay, no New Game+</h2>
+        <h3>No mission replay, no New Game+</h3>
         <p>There is no way to replay a story mission and no New Game+. Make a manual save at the start of every chapter (plus one before the final mission). The game offers 15 manual slots plus autosave — use them. A chapter-start save is the only way back if you miss something.</p>
-        <p class="src-line">Sources: PowerPyx, OutputLag, KeenGamer, eGamers — retrieved 2026-11-20.</p>
+        <p class="src-line">Sources: PowerPyx, OutputLag, KeenGamer, eGamers — retrieved 2026-11-19.</p>
       </div>
       <div class="warn-box">
-        <h2>Cheats disable trophies and saving</h2>
+        <h3>Cheats disable trophies and saving</h3>
         <p>Cheats turn off trophies and saving on that save. The game has dozens of cheats, but they only unlock after the credits — and they must never be used on your trophy save. Keep one clean save for the whole platinum run.</p>
-        <p class="src-line">Sources: PowerPyx, OutputLag — retrieved 2026-11-20.</p>
+        <p class="src-line">Sources: PowerPyx, OutputLag — retrieved 2026-11-19.</p>
       </div>
     </div>
-    <div id="hiddenPanel" class="hidden-panel"></div>
+    <div class="hidden-panel" id="hiddenPanel"></div>
   </section>
-
-  <section id="tab-progress" class="tab-panel">
+  <section class="tab-page" id="page-progress">
     <h1>Progress &amp; export</h1>
-    <p class="lede">Two ways to read the same run: trophies earned, and PSN points toward the platinum.</p>
-    <div class="progress-grid">
-      <div class="card">
-        <h2>PSN points toward the platinum</h2>
-        <div id="psnBig" class="psn-big">135 / 1,230 pts · 11%</div>
-        <p class="muted">PSN values: Bronze 15 · Silver 30 · Gold 90 · Platinum 180. Total for all 55: 1,230 pts. (Some entries quote 1,350 — that total counts the platinum as 300; this guide uses the standard 180.)</p>
-        <h3>Earned by grade</h3>
-        <div id="gradeBars"></div>
-        <h3>Earned by kind</h3>
-        <div id="kindBars"></div>
-      </div>
-      <div class="card">
-        <h2>Roadmap stages</h2>
-        <div id="stageGrid" class="stage-grid"></div>
-        <h2>Back up or move your progress</h2>
-        <div class="btn-row">
-          <button id="exportBtn2" class="btn gold-btn" type="button">Export progress (.json)</button>
-          <button id="importBtn2" class="btn" type="button">Import file</button>
-          <button id="resetBtn" class="btn danger" type="button">Reset progress</button>
-        </div>
-        <div id="backupMeta" class="backup-meta"></div>
-        <p class="muted">File format leonida-getaway-progress/v1 · ids + names, counters, spoiler setting. Demo progress was seeded on first open — use Reset to start clean.</p>
-      </div>
-    </div>
+    <p class="lede">Your run, counted honestly. PSN points use the official values — Bronze 15, Silver 30, Gold 90, Platinum 180 — for a total of 1,230 points across the 55 trophies.</p>
+    <div id="progressBody"></div>
   </section>
-
-  <section id="tab-sources" class="tab-panel">
-    <h1>Sources &amp; honesty</h1>
-    <p class="lede">Every guide cites at least one source; every step cites at least one source. Nothing here copies another guide's text — the guides are written in our own words from the official list and the sources below.</p>
-    <div class="dispute-box">
-      <h2>SOURCES DISAGREE — both versions shown</h2>
-      <p><b>Version A — PowerPyx, KeenGamer:</b> 18 meditation spots; the early Chapter 1 spot is at Jason's house.</p>
-      <p><b>Version B — OutputLag, eGamers:</b> the early Chapter 1 spot is a balcony meditation with Lucia; some lists count 15 spots.</p>
-      <p><b>Our call:</b> meditate at every spot the moment you see one and keep a Chapter 1 save. The count in this guide follows PSN's 18. Until the game confirms it, do not trust either location alone.</p>
-    </div>
-    <table class="source-table">
-      <thead><tr><th>Source</th><th>Read</th><th>Guides</th><th>Note</th></tr></thead>
-      <tbody id="sourceMatrix"></tbody>
-    </table>
-    <p class="muted">Honesty notes: 5 trophies carry the label “trigger not yet confirmed” — their guides say only what the official description gives. Chapter count is an open question: the kit lists Chapters 1–4 + a final mission; PowerPyx describes 5 chapters. This guide does not claim a chapter count without a source.</p>
+  <section class="tab-page" id="page-sources">
+    <h1>Sources — every fact has an address</h1>
+    <p class="lede">11 sources, all read 19 November 2026. Every guide in this app cites at least one of them, and every numbered step cites its own source. Nothing here is copied from another guide — the words are this guide's own; the sources are where each fact comes from.</p>
+    <div id="sourceMatrix"></div>
+    <div id="sourceRail"></div>
   </section>
 </main>
-
-<footer class="foot">
-  <p>LEONIDA GETAWAY — an unofficial fan guide. Not affiliated with Rockstar Games. No official artwork or logos are used. Trophy names, descriptions and grades are the official list (2026-11-18).</p>
-  <p>Built for the make.fun bounty “gta6-trophy-guide-01”. Referral: <a href="https://make.fun/r/nmy46sr8">https://make.fun/r/nmy46sr8</a></p>
+<footer>
+  <p>LEONIDA GETAWAY — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; no Rockstar logo or official artwork is used here. Trophy names and descriptions are shown as PlayStation publishes them. All guide text is written in this guide's own words, with sources cited beside each trophy.</p>
 </footer>
-
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
