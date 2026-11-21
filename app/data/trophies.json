@@ -350,7 +350,7 @@
    "guide": "Meditate at every meditation spot across Leonida — 18 spots by the most complete count. This is the one possibly missable trophy: one spot in Chapter 1 disappears permanently after that chapter, so meditate the moment a spot appears and never skip the Chapter 1 spot.",
    "steps": [
     { "t": "Meditate at every spot the moment you see it — the Chapter 1 spot is gone once that chapter ends.", "c": [1, 2] },
-    { "t": "Work through the full list of 18 spots across Leonida; the counter in this guide tracks 0/18.", "c": [1, 3] },
+    { "t": "Work through the full list of 18 spots across Leonida; the counter in this guide tracks your count toward 18 (demo opens at 6/18).", "c": [1, 3] },
     { "t": "If a list you follow counts only 15 spots, use the 18-spot list — the extra spots are the safe play until the count is settled.", "c": [1, 2] }
    ],
    "sources": [1, 2, 3, 5],

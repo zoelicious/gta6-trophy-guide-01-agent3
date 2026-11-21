@@ -61,7 +61,10 @@ function load() {
       };
     }
   } catch { /* corrupted state: start fresh */ }
-  return { earned: [], counts: {}, spoilers: true, revealed: {}, selected: 28, lastExport: null, savedAt: null };
+  // Fresh visitors open on Positive Mental Attitude with a demo count of 6/18
+  // meditation spots already logged, so the cover detail shows a live stepper
+  // (6/18) instead of an empty 0/18 — the count is theirs to change with + / −.
+  return { earned: [], counts: { 28: 6 }, spoilers: true, revealed: {}, selected: 28, lastExport: null, savedAt: null };
 }
 
 function save() {
@@ -278,6 +281,9 @@ function renderDetail() {
       `<label class="earned"><input id="chk-earned" type="checkbox" ${isEarned(t) ? 'checked' : ''}> Earned</label></div>`;
   } else {
     html += `<div class="stepper"><span class="lbl">TRACKER</span><label class="earned"><input id="chk-earned" type="checkbox" ${isEarned(t) ? 'checked' : ''}> Earned</label></div>`;
+  }
+  if (t.id === 28) {
+    html += `<p class="fine">Demo progress: 6 of 18 spots already logged above — tap + each time you meditate a new spot, and the counter (and the 0/55 header) updates with it.</p>`;
   }
   if (t.dispute) {
     html += `<div class="box dispute"><h4>${esc(t.dispute.title)}</h4><p><b>Version A [1]:</b> ${esc(t.dispute.a.replace(/^Version A \[1\]: /, ''))}</p><p><b>Version B [2][5]:</b> ${esc(t.dispute.b.replace(/^Version B \[2\]\[5\]: /, ''))}</p><p>${esc(t.dispute.call)}</p></div>`;
